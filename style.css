@@ -1,0 +1,37 @@
+:root {
+--btn-color:#46A358;
+--color-text:#3D3D3D;
+--small-text:#727272;
+--background:#A5A5A5;
+}
+* {
+	margin: 0;
+  padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	border: none;
+}
+
+html {
+	font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--background);
+	line-height: 1.6;
+	color: var(--color-text);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 120px;
+	margin: 0 auto;
+}
