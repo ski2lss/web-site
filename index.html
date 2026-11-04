@@ -1,52 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<div class="container">
-				<div>
-					<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.15 0C7.67748 0 0 7.67746 0 17.15C0 26.0201 6.73548 33.3175 15.3711 34.207C14.8496 29.9134 15.0436 26.4001 15.7067 23.5135C15.3347 21.7225 14.4898 19.0703 12.5734 17.1864C12.5734 17.1864 13.8348 19.0784 14.5181 21.6214C14.5181 21.6255 14.5221 21.6295 14.5221 21.6335C14.5949 21.9044 14.6596 22.1793 14.7162 22.4623C14.7283 22.527 14.7404 22.5917 14.7526 22.6604C14.8051 22.9515 14.8536 23.2426 14.886 23.5418C5.19513 22.3532 3.12921 13.6569 3.35561 10.3781C13.665 10.9482 15.7754 17.8292 16.0827 22.0985C19.4585 11.0412 30.1843 10.4024 31.0697 10.3781C31.4538 18.8763 25.1509 25.5026 17.6149 26.0807C17.6635 25.8503 17.7201 25.6198 17.7767 25.3934C17.7928 25.3247 17.813 25.26 17.8333 25.1913C17.8777 25.0296 17.9222 24.8679 17.9748 24.7061C17.995 24.6374 18.0192 24.5646 18.0394 24.4959C18.096 24.318 18.1567 24.1442 18.2173 23.9663C18.2335 23.9259 18.2456 23.8854 18.2618 23.845C18.3386 23.6348 18.4195 23.4326 18.5003 23.2305C18.5084 23.2143 18.5125 23.1941 18.5205 23.1779C18.5205 23.1779 18.5205 23.1779 18.5246 23.1779C20.4571 18.5043 24.0229 15.4439 24.0229 15.4439C17.0247 19.4868 15.8441 29.9983 15.6582 34.2231C16.1514 34.2676 16.6446 34.2999 17.15 34.2999C26.6225 34.2999 34.3 26.6225 34.3 17.15C34.3 7.67746 26.6225 0 17.15 0Z" fill="#46A358"/>
-					</svg>
-
-					<span>GREENSHOP</span>
-				</div>
-
-				<div>
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">Shop</a></li>
-						<li><a href="">Plant Care</a></li>
-						<li><a href="">Blogs</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z" fill="#3D3D3D"/>
-					</svg></a>
-
-					<a href=""><svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M17.1558 20.25H9.89066C6.78905 20.25 4.26569 17.7267 4.26569 14.6251V8.85947C4.26569 5.9762 2.82861 3.30739 0.421544 1.72031C-0.0107343 1.43531 -0.130077 0.853876 0.154921 0.421598C0.439919 -0.0107278 1.02131 -0.130118 1.45368 0.154974C2.82776 1.06097 3.94254 2.2559 4.73969 3.63167C4.91195 3.82466 6.30104 5.29699 8.57821 5.29699H19.3738C22.3191 5.24191 24.6245 8.19769 23.8544 11.0406L22.6117 15.9939C21.9829 18.4998 19.7394 20.25 17.1558 20.25V20.25ZM5.90415 6.64234C6.06001 7.36238 6.14068 8.10483 6.14068 8.85947V14.6251C6.14068 16.6928 7.82292 18.375 9.89066 18.375H17.1558C18.8782 18.375 20.3739 17.2082 20.793 15.5376L22.0358 10.5844C22.4933 8.89509 21.1233 7.13931 19.3738 7.17198H8.57817C7.54828 7.17198 6.65185 6.94993 5.90415 6.64234V6.64234ZM9.42191 22.8281C9.42191 22.1809 8.89724 21.6563 8.25004 21.6563C6.69511 21.7182 6.69647 23.9387 8.25004 24C8.89724 24 9.42191 23.4753 9.42191 22.8281ZM18.75 22.8281C18.75 22.1809 18.2253 21.6563 17.5781 21.6563C16.0232 21.7182 16.0245 23.9387 17.5781 24C18.2253 24 18.75 23.4753 18.75 22.8281ZM20.3113 9.98446C20.3113 9.46668 19.8916 9.04697 19.3738 9.04697H8.95316C7.7093 9.09647 7.71023 10.8729 8.95316 10.922H19.3738C19.8916 10.922 20.3113 10.5022 20.3113 9.98446Z" fill="#3D3D3D"/>
-<path d="M30 8C30 11.866 26.866 15 23 15C19.134 15 16 11.866 16 8C16 4.13401 19.134 1 23 1C26.866 1 30 4.13401 30 8Z" fill="#46A358" stroke-width="2" stroke="white"/>
-<path d="M25.12 8.83C25.12 7.58 24.1 6.62 22.95 6.62C22.84 6.62 22.75 6.63 22.66 6.65L24.25 4.4H23L21.35 6.73C21.12 7.06 20.95 7.31 20.84 7.49C20.73 7.67 20.64 7.87 20.56 8.1C20.49 8.32 20.45 8.56 20.45 8.82C20.42 10.12 21.53 11.13 22.78 11.11C24.04 11.11 25.12 10.12 25.12 8.83ZM24.07 8.83C24.07 9.2 23.94 9.52 23.69 9.77C23.44 10.02 23.14 10.14 22.78 10.14C22.41 10.14 22.11 10.02 21.86 9.77C21.61 9.52 21.49 9.2 21.49 8.83C21.49 8.46 21.61 8.15 21.86 7.9C22.11 7.65 22.41 7.52 22.78 7.52C23.14 7.52 23.44 7.65 23.69 7.9C23.94 8.15 24.07 8.46 24.07 8.83Z" fill="white"/>
-					</svg></a>
-					<button>
-					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M18.1592 10.1007H8.125" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
-					<path d="M15.7205 7.6709L18.1605 10.1009L15.7205 12.5309" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
-					<path d="M13.6333 6.35817C13.3583 3.37484 12.2416 2.2915 7.79997 2.2915C1.88247 2.2915 1.88247 4.2165 1.88247 9.99984C1.88247 15.7832 1.88247 17.7082 7.79997 17.7082C12.2416 17.7082 13.3583 16.6248 13.6333 13.6415" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
-					</svg>Login</button>
-				</div>
-
-			</div>
-		</nav>
-	</header>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find beautiful houseplants and accessories at GreenShop.">
+    <title>GreenShop — Make a Better Planet</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="brand" href="#home" aria-label="GreenShop home"><svg class="brand__icon" viewBox="0 0 35 35" aria-hidden="true"><circle cx="17.5" cy="17.5" r="17.5" fill="currentColor"/><path d="M17.5 29c-.5-9.2 4.2-16.4 12.1-18.3-.8 8.8-5.8 14.2-12.1 14.8-1-7.7-4.5-11.8-9.2-14.3 1 7.5 4.3 11.2 9.2 12.2" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>GREENSHOP</span></a>
+      <input class="menu-checkbox" type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+      <label class="menu-toggle" for="menu-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a class="main-nav__link is-active" href="#home">Home</a>
+        <a class="main-nav__link" href="#catalog">Shop</a>
+        <details class="care-menu">
+          <summary class="main-nav__link">Plant Care</summary>
+          <div class="care-menu__panel">
+            <ul class="care-menu__list">
+              <li><a href="#services">Drainage</a></li>
+              <li><a href="#services">Fungicides</a></li>
+              <li><a href="#services">Fertilizer</a></li>
+              <li><a class="care-menu__active" href="#services">Priming <span>‹</span></a></li>
+            </ul>
+            <ul class="care-menu__list">
+              <li><a href="#services">Universal</a></li>
+              <li><a href="#services">For Ficus</a></li>
+              <li><a href="#services">For Cacti</a></li>
+              <li><a href="#services">For Citrus</a></li>
+              <li><a href="#services">For those in bloom</a></li>
+              <li><a href="#services">For Orchids</a></li>
+            </ul>
+          </div>
+        </details>
+        <a class="main-nav__link" href="#blog">Blogs</a>
+      </nav>
+      <input class="auth-toggle" type="checkbox" id="auth-toggle">
+      <div class="header-actions">
+        <button class="icon-button search-button" type="button" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7.2"/><path d="m16 16 5 5"/></svg></button>
+        <button class="icon-button cart-button" type="button" aria-label="Shopping cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h2l2.3 12.1a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6L22 8H5"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="cart-count">0</span></button>
+        <label class="button button--login" for="auth-toggle"><span aria-hidden="true">⇥</span> Login</label>
+      </div>
+      <div class="auth-overlay">
+        <label class="auth-overlay__backdrop" for="auth-toggle" aria-label="Close login window"></label>
+        <div class="auth-window">
+          <label class="auth-window__close" for="auth-toggle" aria-label="Close">×</label>
+          <input class="auth-choice" type="radio" name="auth-tab" id="auth-login">
+          <input class="auth-choice" type="radio" name="auth-tab" id="auth-register" checked>
+          <div class="auth-tabs">
+            <label for="auth-login">Login</label>
+            <span>|</span>
+            <label for="auth-register">Register</label>
+          </div>
+          <div class="auth-forms">
+            <form class="auth-form auth-form--login">
+              <p>Enter your username and password to login.</p>
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <a class="auth-help" href="#auth-toggle">Forgot Password?</a>
+              <button class="button auth-submit" type="submit">Login</button>
+              <p class="auth-divider">Or login with</p>
+              <button class="social-login" type="button"><span class="google-mark">G</span>Continue with Google</button>
+              <button class="social-login" type="button"><span class="facebook-mark">f</span>Continue with Facebook</button>
+            </form>
+            <form class="auth-form auth-form--register">
+              <p>Enter your email and password to register.</p>
+              <input type="text" name="register-username" placeholder="Username" required>
+              <input type="email" name="email" placeholder="Enter your email address" required>
+              <input type="password" name="register-password" placeholder="Password" required>
+              <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+              <button class="button auth-submit" type="submit">Register</button>
+              <p class="auth-divider">Or register with</p>
+              <button class="social-login" type="button"><span class="google-mark">G</span>Continue with Google</button>
+              <button class="social-login" type="button"><span class="facebook-mark">f</span>Continue with Facebook</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero__copy">
+          <p class="eyebrow">Welcome to GreenShop</p>
+          <h1>Let’s make a<br>better <span>planet</span></h1>
+          <p class="hero__description">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create a unique Urban Jungle. Order your favorite plants!</p>
+          <a class="button" href="#catalog">Shop now</a>
+        </div>
+        <img class="hero__plant" src="img/flowers.png" alt="Green tropical plant in a ceramic pot">
+      </section>
+      <section class="catalog container" id="catalog" aria-label="Plant catalog">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+            <h2>Categories</h2>
+            <ul class="category-list">
+              <li><button class="category-button is-active">House Plants <span>(33)</span></button></li>
+              <li><button class="category-button">Potter Plants <span>(12)</span></button></li>
+              <li><button class="category-button">Seeds <span>(65)</span></button></li>
+              <li><button class="category-button">Small Plants <span>(39)</span></button></li>
+              <li><button class="category-button">Big Plants <span>(23)</span></button></li>
+              <li><button class="category-button">Succulents <span>(17)</span></button></li>
+              <li><button class="category-button">Terrariums <span>(19)</span></button></li>
+              <li><button class="category-button">Gardening <span>(13)</span></button></li>
+              <li><button class="category-button">Accessories <span>(18)</span></button></li>
+            </ul>
+            <h2 class="filter-title">Price Range</h2>
+            <input class="price-range" type="range" min="39" max="1230" value="900" aria-label="Maximum price">
+            <p class="price-label">Price: <strong>$39 – $900</strong></p>
+            <button class="button filter-button" type="button">Filter</button>
+            <h2 class="filter-title size-title">Size</h2>
+            <ul class="category-list size-list">
+              <li><button class="category-button">Small <span>(119)</span></button></li>
+              <li><button class="category-button">Medium <span>(86)</span></button></li>
+              <li><button class="category-button">Large <span>(78)</span></button></li>
+            </ul>
+          </div>
+          <a class="sale-banner" href="#catalog"><img src="img/Super%20Sale%20Banner.png" alt="Super Sale — up to 75% off"></a>
+        </aside>
+        <div class="catalog-main">
+          <div class="catalog-toolbar">
+            <div class="product-tabs" aria-label="Product selection">
+              <button class="product-tab is-active">All Plants</button>
+              <button class="product-tab">New Arrivals</button>
+              <button class="product-tab">Sale</button>
+            </div>
+            <label class="sort-control">Short by: <select aria-label="Sort products"><option value="default">Default sorting</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name</option></select></label>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers2.png" alt="Barberton Daisy in geometric glass planter">
+                <div class="product-actions">
+                  <button aria-label="Add Barberton Daisy to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Barberton Daisy to favorites" class="favorite">♡</button>
+                  <button aria-label="View Barberton Daisy" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Barberton Daisy</h3>
+              <p class="product-price">$119.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers1.png" alt="Angel Wing Begonia">
+                <div class="product-actions">
+                  <button aria-label="Add Angel Wing Begonia to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Angel Wing Begonia to favorites" class="favorite">♡</button>
+                  <button aria-label="View Angel Wing Begonia" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Angel Wing Begonia</h3>
+              <p class="product-price">$169.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <span class="discount">13% OFF</span>
+                <img src="img/flowers8.png" alt="African Violet in a black stand planter">
+                <div class="product-actions">
+                  <button aria-label="Add African Violet to cart" class="add-cart">＋</button>
+                  <button aria-label="Add African Violet to favorites" class="favorite">♡</button>
+                  <button aria-label="View African Violet" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>African Violet</h3>
+              <p class="product-price">$199.00 <del>$229.00</del></p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers.png" alt="Beach Spider Lily">
+                <div class="product-actions">
+                  <button aria-label="Add Beach Spider Lily to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Beach Spider Lily to favorites" class="favorite">♡</button>
+                  <button aria-label="View Beach Spider Lily" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Beach Spider Lily</h3>
+              <p class="product-price">$129.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers4.png" alt="Blushing Bromeliad">
+                <div class="product-actions">
+                  <button aria-label="Add Blushing Bromeliad to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Blushing Bromeliad to favorites" class="favorite">♡</button>
+                  <button aria-label="View Blushing Bromeliad" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Blushing Bromeliad</h3>
+              <p class="product-price">$139.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers3.png" alt="Aluminum Plant">
+                <div class="product-actions">
+                  <button aria-label="Add Aluminum Plant to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Aluminum Plant to favorites" class="favorite">♡</button>
+                  <button aria-label="View Aluminum Plant" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Aluminum Plant</h3>
+              <p class="product-price">$179.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers6.png" alt="Bird's Nest Fern">
+                <div class="product-actions">
+                  <button aria-label="Add Bird's Nest Fern to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Bird's Nest Fern to favorites" class="favorite">♡</button>
+                  <button aria-label="View Bird's Nest Fern" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Bird’s Nest Fern</h3>
+              <p class="product-price">$99.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers9.png" alt="Broadleaf Lady Palm in glass terrarium">
+                <div class="product-actions">
+                  <button aria-label="Add Broadleaf Lady Palm to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Broadleaf Lady Palm to favorites" class="favorite">♡</button>
+                  <button aria-label="View Broadleaf Lady Palm" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Broadleaf Lady Palm</h3>
+              <p class="product-price">$59.00</p>
+            </article>
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/flowers7.png" alt="Chinese Evergreen hanging planter">
+                <div class="product-actions">
+                  <button aria-label="Add Chinese Evergreen to cart" class="add-cart">＋</button>
+                  <button aria-label="Add Chinese Evergreen to favorites" class="favorite">♡</button>
+                  <button aria-label="View Chinese Evergreen" class="quick-view">⌕</button>
+                </div>
+              </div>
+              <h3>Chinese Evergreen</h3>
+              <p class="product-price">$39.00</p>
+            </article>
+          </div>
+          <nav class="pagination" aria-label="Product pages">
+            <button class="page-button is-active" aria-current="page">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button">3</button>
+            <button class="page-button">4</button>
+            <button class="page-button" aria-label="Next page">›</button>
+          </nav>
+        </div>
+      </section>
+      <section class="promos container" aria-label="Plant collections">
+        <article class="promo-card">
+          <img src="img/image%2014.png" alt="Potted plant">
+          <div class="promo-card__copy">
+            <h2>Summer Cactus<br>& Succulents</h2>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+            <a class="button button--small" href="#catalog">Find More <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="promo-card">
+          <img src="img/image%2015.png" alt="Plant in a modern black stand">
+          <div class="promo-card__copy">
+            <h2>Styling Trends<br>& Much More</h2>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+            <a class="button button--small" href="#catalog">Find More <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </section>
+      <section class="blog container" id="blog">
+        <header class="section-heading">
+          <h2>Our Blog Posts</h2>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+        </header>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <img src="img/01.png" alt="Houseplants in decorative pots">
+            <div class="blog-card__body">
+              <p class="blog-meta">September 12 | Read in 6 minutes</p>
+              <h3>Cactus & Succulent Care Tips</h3>
+              <p class="blog-card__description">Cacti are succulents and easy care plants for any home or patio.</p>
+              <a href="#blog">Read More <span>→</span></a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img src="img/02.png" alt="Monstera plants in a home">
+            <div class="blog-card__body">
+              <p class="blog-meta">September 13 | Read in 2 minutes</p>
+              <h3>Top 10 Succulents for Your Home</h3>
+              <p class="blog-card__description">Best in hanging baskets. Prefers medium to high light.</p>
+              <a href="#blog">Read More <span>→</span></a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img src="img/03.png" alt="Succulents in hanging planters">
+            <div class="blog-card__body">
+              <p class="blog-meta">September 15 | Read in 3 minutes</p>
+              <h3>Cacti & Succulent Care Tips</h3>
+              <p class="blog-card__description">Cacti and succulents thrive in containers and because most are..</p>
+              <a href="#blog">Read More <span>→</span></a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img src="img/04.png" alt="Hanging plants in a bright room">
+            <div class="blog-card__body">
+              <p class="blog-meta">September 15 | Read in 2 minutes</p>
+              <h3>Best Houseplants Room By Room</h3>
+              <p class="blog-card__description">The benefits of houseplants are endless. In addition to..</p>
+              <a href="#blog">Read More <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container" id="services">
+      <div class="footer-top">
+        <div class="footer-services">
+          <article>
+            <img src="img/cactus.svg" alt="">
+            <h2>Garden Care</h2>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          </article>
+          <article>
+            <img src="img/cactus2.svg" alt="">
+            <h2>Plant Renovation</h2>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          </article>
+          <article>
+            <img src="img/cactus3.svg" alt="">
+            <h2>Watering Garden</h2>
+            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          </article>
+        </div>
+        <div class="newsletter" id="newsletter">
+          <h2>Would you like to join newsletters?</h2>
+          <form class="newsletter-form" action="#newsletter" method="get">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email address…" autocomplete="email" required>
+            <button class="button" type="submit">Join</button>
+          </form>
+          <p>We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</p>
+        </div>
+      </div>
+      <div class="contact-strip">
+        <a class="brand" href="#home"><svg class="brand__icon" viewBox="0 0 35 35" aria-hidden="true"><circle cx="17.5" cy="17.5" r="17.5" fill="currentColor"/><path d="M17.5 29c-.5-9.2 4.2-16.4 12.1-18.3-.8 8.8-5.8 14.2-12.1 14.8-1-7.7-4.5-11.8-9.2-14.3 1 7.5 4.3 11.2 9.2 12.2" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>GREENSHOP</span></a>
+        <p>⌖ 70 West Buckingham Ave.<br><span>Farmington, NY 11735</span></p>
+        <a href="mailto:contact@greenshop.com">✉ contact@greenshop.com</a>
+        <a href="tel:+8801911717490">♧ +88 01911 717 490</a>
+      </div>
+      <div class="footer-links">
+        <section>
+          <h2>My Account</h2>
+          <a href="#">My Account</a>
+          <a href="#">Our stores</a>
+          <a href="#">Contact us</a>
+          <a href="#">Career</a>
+          <a href="#">Specials</a>
+        </section>
+        <section>
+          <h2>Help & Guide</h2>
+          <a href="#">Help Center</a>
+          <a href="#">How to Buy</a>
+          <a href="#">Shipping & Delivery</a>
+          <a href="#">Product Policy</a>
+          <a href="#">How to Return</a>
+        </section>
+        <section>
+          <h2>Categories</h2>
+          <a href="#catalog">House Plants</a>
+          <a href="#catalog">Potter Plants</a>
+          <a href="#catalog">Seeds</a>
+          <a href="#catalog">Small Plants</a>
+          <a href="#catalog">Accessories</a>
+        </section>
+        <section class="social">
+          <h2>Social Media</h2>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Twitter">♥</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+          <h2 class="payments-title">We accept</h2>
+          <p class="payments">PayPal　🔴　VISA　AMEX</p>
+        </section>
+      </div>
+      <p class="copyright">© 2021 GreenShop. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,497 @@
+@use "variables" as *;
+
+.catalog {
+	display: grid;
+	grid-template-columns: 310px 1fr;
+	gap: 50px;
+	margin-top: 46px;
+}
+
+.sidebar {
+	align-self: start;
+	background: $pale;
+}
+
+.sidebar__inner {
+	padding: 12px 18px 24px;
+}
+
+.sidebar h2 {
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+.category-list {
+	margin: 0;
+	padding: 0 0 0 12px;
+	list-style: none;
+}
+
+.category-button {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 7px 4px 7px 0;
+	border: 0;
+	background: transparent;
+	text-align: left;
+	cursor: pointer;
+}
+
+.category-button:hover,
+.category-button.is-active {
+	color: $green;
+	font-weight: 700;
+}
+
+.filter-title {
+	margin-top: 32px;
+}
+
+.price-range {
+	width: 82%;
+	margin: 10px 10px 2px;
+	accent-color: $green;
+}
+
+.price-label {
+	margin: 3px 12px 12px;
+}
+
+.price-label strong {
+	color: $green;
+}
+
+.size-title {
+	margin-top: 40px;
+}
+
+.sale-banner {
+	display: block;
+	margin-top: 14px;
+}
+
+.sale-banner img {
+	width: 100%;
+}
+
+.catalog-main {
+	min-width: 0;
+}
+
+.catalog-toolbar {
+	display: flex;
+	min-height: 55px;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.product-tabs {
+	display: flex;
+	gap: 34px;
+}
+
+.product-tab {
+	padding: 0 0 8px;
+	border: 0;
+	border-bottom: 2px solid transparent;
+	background: none;
+	cursor: pointer;
+}
+
+.product-tab.is-active,
+.product-tab:hover {
+	border-color: $green;
+	color: $green;
+	font-weight: 700;
+}
+
+.sort-control {
+	white-space: nowrap;
+}
+
+.sort-control select {
+	padding: 0 3px;
+	border: 0;
+	background: transparent;
+	color: $text;
+	cursor: pointer;
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 32px;
+	row-gap: 56px;
+}
+
+.product-card {
+	min-width: 0;
+}
+
+.product-card h3 {
+	margin-top: 8px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.product-card__image {
+	position: relative;
+	display: flex;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	background: $pale;
+	overflow: hidden;
+}
+
+.product-card__image > img {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	object-fit: contain;
+}
+
+.discount {
+	position: absolute;
+	top: 14px;
+	left: 0;
+	z-index: 1;
+	padding: 5px 9px;
+	background: $green;
+	color: white;
+	font-weight: 700;
+}
+
+.product-actions {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	gap: 10px;
+	display: none;
+}
+
+.product-actions button {
+	display: flex;
+	width: 36px;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	border-radius: 4px;
+	background: white;
+	font-size: 23px;
+	cursor: pointer;
+}
+
+.product-actions button:hover,
+.product-actions button.is-selected {
+	color: $green;
+}
+
+.product-card:hover .product-actions {
+	display: flex;
+}
+
+.product-price {
+	color: $green;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.product-price del {
+	margin-left: 10px;
+	color: #a5a5a5;
+	font-weight: 400;
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin: 68px 0 100px;
+}
+
+.page-button {
+	min-width: 36px;
+	height: 36px;
+	border: 1px solid $line;
+	border-radius: 4px;
+	background: white;
+	cursor: pointer;
+}
+
+.page-button:hover,
+.page-button.is-active {
+	border-color: $green;
+	background: $green;
+	color: white;
+}
+
+.promos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 28px;
+	margin-bottom: 90px;
+}
+
+.promo-card {
+	display: flex;
+	min-height: 230px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 25px 20px 10px;
+	background: $pale;
+	text-align: right;
+}
+
+.promo-card > img {
+	width: 44%;
+	max-height: 220px;
+	object-fit: contain;
+	align-self: flex-end;
+}
+
+.promo-card__copy {
+	max-width: 55%;
+}
+
+.promo-card h2 {
+	font-size: 17px;
+	line-height: 1.25;
+	text-transform: uppercase;
+}
+
+.promo-card p {
+	margin: 12px 0 20px;
+	color: $muted;
+	line-height: 1.5;
+}
+
+.blog {
+	margin-bottom: 90px;
+}
+
+.section-heading {
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.section-heading h2 {
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+
+.section-heading p {
+	color: $muted;
+}
+
+.blog-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 28px;
+}
+
+.blog-card {
+	background: $pale;
+}
+
+.blog-card > img {
+	width: 100%;
+	height: 165px;
+	object-fit: cover;
+}
+
+.blog-card__body {
+	padding: 10px 14px 14px;
+}
+
+.blog-meta {
+	color: $green;
+	font-size: 12px;
+}
+
+.blog-card h3 {
+	margin: 4px 0;
+	font-size: 17px;
+	line-height: 1.4;
+}
+
+.blog-card__description {
+	color: $muted;
+	line-height: 1.5;
+}
+
+.blog-card a {
+	display: inline-block;
+	margin-top: 8px;
+	font-weight: 500;
+}
+
+.blog-card a:hover {
+	color: $green;
+}
+
+@media (max-width: 992px) {
+	.catalog {
+		grid-template-columns: 230px 1fr;
+		gap: 28px;
+	}
+
+	.product-grid {
+		column-gap: 18px;
+		row-gap: 38px;
+	}
+
+	.product-tabs {
+		gap: 20px;
+	}
+
+	.blog-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 760px) {
+	.catalog {
+		grid-template-columns: 1fr;
+		gap: 26px;
+	}
+
+	.sidebar {
+		display: grid;
+		grid-template-columns: 1fr 180px;
+	}
+
+	.sidebar__inner {
+		padding: 16px;
+	}
+
+	.sidebar .category-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 14px;
+	}
+
+	.sale-banner {
+		align-self: end;
+	}
+
+	.pagination {
+		margin: 45px 0 70px;
+	}
+
+	.promos {
+		grid-template-columns: 1fr;
+		margin-bottom: 65px;
+	}
+}
+
+@media (max-width: 576px) {
+	.catalog {
+		margin-top: 28px;
+	}
+
+	.sidebar {
+		grid-template-columns: 1fr;
+	}
+
+	.sale-banner {
+		display: none;
+	}
+
+	.sidebar .category-list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.catalog-toolbar {
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-bottom: 18px;
+	}
+
+	.product-tabs {
+		width: 100%;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	.sort-control {
+		font-size: 13px;
+	}
+
+	.product-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 28px 12px;
+	}
+
+	.product-card h3 {
+		font-size: 13px;
+	}
+
+	.product-price {
+		font-size: 14px;
+	}
+
+	.product-actions {
+		display: flex;
+		gap: 4px;
+	}
+
+	.product-actions button {
+		width: 30px;
+		height: 30px;
+		font-size: 19px;
+	}
+
+	.pagination {
+		gap: 6px;
+		margin: 36px 0 55px;
+	}
+
+	.promos {
+		gap: 16px;
+		margin-bottom: 55px;
+	}
+
+	.promo-card {
+		min-height: 185px;
+		padding-right: 14px;
+	}
+
+	.promo-card h2 {
+		font-size: 14px;
+	}
+
+	.promo-card p {
+		font-size: 12px;
+	}
+
+	.section-heading h2 {
+		font-size: 25px;
+	}
+
+	.blog-grid {
+		gap: 16px 12px;
+	}
+
+	.blog-card > img {
+		height: 125px;
+	}
+
+	.blog-card__body {
+		padding: 8px;
+	}
+
+	.blog-card h3 {
+		font-size: 14px;
+	}
+
+	.blog-card__description {
+		font-size: 12px;
+	}
+
+	.blog-meta {
+		font-size: 10px;
+	}
+}
